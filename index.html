@@ -22,6 +22,9 @@ body{margin:0}
 a{color:#8E1A2E}a:hover{color:#5E0F1D}
 </style>
 <style>
+.hero-bg{background:url(images/bg-left.png) left top/auto 640px no-repeat,url(images/bg-right.png) right top/auto 640px no-repeat,radial-gradient(ellipse at 50% 30%,#FFFFFF 50%,#FBF1E3 100%);background-color:#FFFFFF}
+@media (max-width:900px){.hero-bg{background:url(images/bg-left.png) left top/auto 260px no-repeat,url(images/bg-right.png) right top/auto 260px no-repeat,#FFFFFF}}
+@media (max-width:500px){.hero-bg{background:url(images/bg-left.png) left top/auto 190px no-repeat,url(images/bg-right.png) right top/auto 190px no-repeat,#FFFFFF}}
 html{scroll-behavior:smooth}
 img{max-width:100%}
 </style>
@@ -45,10 +48,10 @@ img{max-width:100%}
 </div>
 </header>
 
-<section id="top" style="background: #FFFFFF">
+<section id="top" class="hero-bg">
 <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 88px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
 <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<h1 style="margin: 0"><img src="images/logo.jpg" alt="Heart of Little Italy, in support of the University of Ottawa Heart Institute Foundation" style="display: block; width: 100%; max-width: 580px; height: auto"></h1>
+<h1 style="margin: 0"><img src="images/logo.png" alt="Heart of Little Italy, in support of the University of Ottawa Heart Institute Foundation" style="display: block; width: 100%; max-width: 580px; height: auto"></h1>
 <p style="margin: 0; max-width: 34rem; font-size: 20px; color: #4A3F39">An evening filled with <strong style="font-family: Fraunces, Georgia, serif; font-style: italic; font-weight: 700; font-size: 1.3em; color: #E70201">Flavours from Chef Oz</strong>, friendship and heart. Join us in the heart of Little Italy as we come together to celebrate community and support life-saving heart care. Great food, great company and a meaningful cause — all in one unforgettable night.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <a href="#tickets" style="background: #8E1A2E; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 16px 28px; border-radius: 999px">Buy tickets</a>
@@ -85,6 +88,7 @@ img{max-width:100%}
 </div>
 </div>
 </div>
+<div aria-hidden="true" style="max-width: 1100px; margin: -40px auto 0; padding: 0 24px 32px"><img src="images/ribbon.png" alt="" style="display: block; width: 100%; height: auto"></div>
 </section>
 
 <section id="cause" style="background: #231A16; color: #F8F3EA">
@@ -220,6 +224,7 @@ img{max-width:100%}
 <p style="margin: 8px 0 0; max-width: 40rem; font-size: 15px; color: #6B5F57">Prefer to pay by cheque or e-transfer? Email <a href="mailto:info@salasanmarco.ca">info@salasanmarco.ca</a> and we’ll arrange it.</p>
 </section>
 
+<div aria-hidden="true" style="max-width: 900px; margin: 0 auto; padding: 8px 24px 40px"><img src="images/ribbon.png" alt="" style="display: block; width: 100%; height: auto"></div>
 <footer style="background: #231A16; color: #E9E0D3">
 <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start">
 <div style="display: flex; align-items: center; gap: 20px">
