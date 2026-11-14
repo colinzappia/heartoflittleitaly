@@ -22,17 +22,19 @@ body{margin:0}
 a{color:#8E1A2E}a:hover{color:#5E0F1D}
 </style>
 <style>
-.hero-bg{background:url(images/bg-left.png) left top/auto 640px no-repeat,url(images/bg-right.png) right top/auto 640px no-repeat,radial-gradient(ellipse at 50% 30%,#FFFFFF 50%,#FBF1E3 100%);background-color:#FFFFFF}
-@media (max-width:900px){.hero-bg{background:url(images/bg-left.png) left top/auto 260px no-repeat,url(images/bg-right.png) right top/auto 260px no-repeat,#FFFFFF}}
-@media (max-width:500px){.hero-bg{background:url(images/bg-left.png) left top/auto 190px no-repeat,url(images/bg-right.png) right top/auto 190px no-repeat,#FFFFFF}}
+.tex-page{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0125' numOctaves='4' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.62 0 0 0 0 0.44 0 0 0 0 0.24 0 0 0 0.48 -0.17'/%3E%3C/filter%3E%3Cfilter id='b'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.32 0 0 0 0 0.2 0 0 0 0.16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E") 0 0/480px 480px repeat,linear-gradient(180deg,#FFF8EE 0%,#FBF0E0 55%,#F6E6D0 100%);background-color:#FBF0E0}
+.tex-warm{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0125' numOctaves='4' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.62 0 0 0 0 0.44 0 0 0 0 0.24 0 0 0 0.48 -0.17'/%3E%3C/filter%3E%3Cfilter id='b'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.32 0 0 0 0 0.2 0 0 0 0.16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E") 0 0/480px 480px repeat,radial-gradient(ellipse at 50% 0%,rgba(255,214,150,.35),transparent 60%),#F3E4CC}
+.hero-bg{background:url(images/bg-left.png) left top/auto 640px no-repeat,url(images/bg-right.png) right top/auto 640px no-repeat,radial-gradient(circle at 8% 6%,rgba(255,206,130,.45),transparent 28%),radial-gradient(circle at 94% 12%,rgba(255,196,110,.40),transparent 26%),radial-gradient(circle at 88% 70%,rgba(255,214,150,.22),transparent 30%),radial-gradient(circle at 10% 85%,rgba(255,214,150,.18),transparent 30%),radial-gradient(ellipse at 50% 40%,rgba(255,252,246,.85) 35%,transparent 75%)}
+@media (max-width:900px){.hero-bg{background:url(images/bg-left.png) left top/auto 260px no-repeat,url(images/bg-right.png) right top/auto 260px no-repeat,radial-gradient(circle at 8% 6%,rgba(255,206,130,.45),transparent 28%),radial-gradient(circle at 94% 12%,rgba(255,196,110,.40),transparent 26%),radial-gradient(circle at 88% 70%,rgba(255,214,150,.22),transparent 30%),radial-gradient(circle at 10% 85%,rgba(255,214,150,.18),transparent 30%)}}
+@media (max-width:500px){.hero-bg{background:url(images/bg-left.png) left top/auto 190px no-repeat,url(images/bg-right.png) right top/auto 190px no-repeat,radial-gradient(circle at 8% 6%,rgba(255,206,130,.45),transparent 28%),radial-gradient(circle at 94% 12%,rgba(255,196,110,.40),transparent 26%),radial-gradient(circle at 88% 70%,rgba(255,214,150,.22),transparent 30%),radial-gradient(circle at 10% 85%,rgba(255,214,150,.18),transparent 30%)}}
 html{scroll-behavior:smooth}
 img{max-width:100%}
 </style>
 </head>
 <body>
-<div style="min-height: 100vh; background: #F8F3EA; color: #231A16; font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; font-size: 17px; line-height: 1.6">
+<div class="tex-page" style="min-height: 100vh; color: #231A16; font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; font-size: 17px; line-height: 1.6">
 
-<header style="background: #FFFFFF; border-bottom: 1px solid #E4D9C8">
+<header style="background: rgba(255,250,242,.55); border-bottom: 1px solid #E4D9C8">
 <div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
 <a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #231A16">
 <img src="images/heart.png" alt="" style="display: block; width: 44px; height: auto">
@@ -88,7 +90,6 @@ img{max-width:100%}
 </div>
 </div>
 </div>
-<div aria-hidden="true" style="max-width: 1100px; margin: -40px auto 0; padding: 0 24px 32px"><img src="images/ribbon.png" alt="" style="display: block; width: 100%; height: auto"></div>
 </section>
 
 <section id="cause" style="background: #231A16; color: #F8F3EA">
@@ -168,7 +169,7 @@ img{max-width:100%}
 </div>
 </section>
 
-<section id="tickets" style="background: #EFE6D7">
+<section id="tickets" class="tex-warm">
 <div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 12px; max-width: 40rem">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #3F5A3A">Tickets</p>
@@ -224,7 +225,6 @@ img{max-width:100%}
 <p style="margin: 8px 0 0; max-width: 40rem; font-size: 15px; color: #6B5F57">Prefer to pay by cheque or e-transfer? Email <a href="mailto:info@salasanmarco.ca">info@salasanmarco.ca</a> and we’ll arrange it.</p>
 </section>
 
-<div aria-hidden="true" style="max-width: 900px; margin: 0 auto; padding: 8px 24px 40px"><img src="images/ribbon.png" alt="" style="display: block; width: 100%; height: auto"></div>
 <footer style="background: #231A16; color: #E9E0D3">
 <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start">
 <div style="display: flex; align-items: center; gap: 20px">
